@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.vincent.user_interface_tourist" >
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <supports-screens
+    android:resizeable="true"
+    android:smallScreens="true"
+    android:normalScreens="true"
+    android:largeScreens="true"
+    android:xlargeScreens="true"
+    android:anyDensity="true"
+    />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".LogIn"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AccountResult"
+            android:label="@string/title_activity_account_result" >
+        </activity>
+        <activity
+            android:name=".Attraction"
+            android:label="@string/title_activity_attraction" >
+        </activity>
+        <activity
+            android:name=".CityAttraction"
+            android:label="@string/title_activity_city_attraction" >
+        </activity>
+        <activity
+            android:name=".ConfirmPage"
+            android:label="@string/title_activity_confirm_page" >
+        </activity>
+        <activity
+            android:name=".CreateAccount"
+            android:label="@string/title_activity_create_account" >
+        </activity>
+        <activity
+            android:name=".CurrentPlan"
+            android:label="@string/title_activity_current_plan" >
+        </activity>
+        <activity
+            android:name=".Destination"
+            android:label="@string/title_activity_destination" >
+        </activity>
+        <activity
+            android:name=".EditProfile"
+            android:label="@string/title_activity_edit_profile" >
+        </activity>
+        <activity
+            android:name=".History"
+            android:label="@string/title_activity_history" >
+        </activity>
+        <activity
+            android:name=".Hotel"
+            android:label="@string/title_activity_hotel" >
+        </activity>
+        <activity
+            android:name=".Profile"
+            android:label="@string/title_activity_profile" >
+        </activity>
+        <activity
+            android:name=".Restaurant"
+            android:label="@string/title_activity_restaurant" >
+        </activity>
+        <activity
+            android:name=".PastPlan"
+            android:label="@string/title_activity_past_plan" >
+        </activity>
+    </application>
+
+</manifest>

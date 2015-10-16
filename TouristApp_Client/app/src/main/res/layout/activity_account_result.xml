@@ -1,0 +1,261 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.chosen12.login.AccountResultActivity"
+    android:background="@drawable/image_05">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Account Profile"
+        android:textSize="30sp"
+        android:id="@+id/textView14"
+        android:textStyle="bold"
+        android:textColor="#ff000000" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="349dp"
+        android:paddingTop="20sp">
+
+        <TableRow
+            android:paddingLeft="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/row">
+
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="ID"
+                android:id="@+id/IDTextView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40sp"
+                android:id="@+id/IDEditTextResult"
+                android:text="" />
+        </TableRow>
+
+        <TableRow
+            android:paddingTop="10sp"
+            android:paddingLeft="10sp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:id="@+id/PasswordTextView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:textSize="20sp"
+                android:layout_marginLeft="40sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/PasswordEditTextResult" />
+
+        </TableRow>
+
+        <TableRow
+            android:paddingTop="10sp"
+            android:paddingLeft="10sp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:id="@+id/NameTextView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:textSize="20sp"
+                android:layout_marginLeft="40sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/NameEditTextResult" />
+
+        </TableRow>
+
+        <TableRow
+            android:paddingTop="10sp"
+            android:paddingLeft="10sp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age"
+                android:id="@+id/AgeTextView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:textSize="20sp"
+                android:layout_marginLeft="40sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/AgeEditTextResult" />
+
+        </TableRow>
+
+        <TableRow
+            android:paddingTop="10sp"
+            android:paddingLeft="10sp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sex"
+                android:id="@+id/SexTextView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:textSize="20sp"
+                android:layout_marginLeft="40sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/SexEditTextResult" />
+
+        </TableRow>
+
+        <TableRow
+            android:paddingTop="10sp"
+            android:paddingLeft="10sp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:id="@+id/EmailTextView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:textSize="20sp"
+                android:layout_marginLeft="40sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/EmailEditTextResult" />
+
+        </TableRow>
+
+        <TableRow
+            android:paddingTop="10sp"
+            android:paddingLeft="10sp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:id="@+id/PhoneTextView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:textSize="20sp"
+                android:layout_marginLeft="40sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/PhoneEditTextResult" />
+
+        </TableRow>
+
+        <TableRow
+            android:paddingTop="10sp"
+            android:paddingLeft="10sp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:id="@+id/AddressTextView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:textSize="20sp"
+                android:layout_marginLeft="40sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/AddressEditTextResult" />
+
+        </TableRow>
+
+        <TableRow
+            android:paddingTop="10sp"
+            android:paddingLeft="10sp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Country"
+                android:id="@+id/CountryTextView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:textSize="20sp"
+                android:layout_marginLeft="40sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/CountryEditTextResult" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:paddingTop="30sp"
+        android:layout_height="fill_parent">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:layout_marginLeft="50sp"
+            android:id="@+id/EditButton"
+            android:layout_column="1" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save and to Log-In"
+            android:layout_marginLeft="20sp"
+            android:id="@+id/GoToLoginPageButton"
+            android:layout_column="1" />
+    </LinearLayout>
+</LinearLayout>
+
+

@@ -1,0 +1,1 @@
+create table IF NOT EXISTS user (id varchar(20) primary key, password varchar(20), name varchar(20), age int, sex int, email varchar(30), phone varchar(15), address varchar(50), country varchar(15));

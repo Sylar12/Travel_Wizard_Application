@@ -1,0 +1,285 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.chosen12.screen6.ResultActivity"
+    android:background="@drawable/image_05">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Account Profile"
+            android:textSize="20sp"
+            android:id="@+id/ProfileTextView"
+            android:textStyle="bold" />
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="301dp"
+            android:paddingTop="10sp"
+            android:layout_weight="0.71">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingTop="20sp"
+                android:layout_marginLeft="10sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ID"
+                    android:layout_marginLeft="20sp"
+                    android:id="@+id/IDTextView"
+                    android:textSize="15sp"
+                    android:textColor="#ff000000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50sp"
+                    android:textSize="15sp"
+                    android:id="@+id/IDEditTextResult" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingTop="10sp"
+                android:layout_marginLeft="10sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:layout_marginLeft="20sp"
+                    android:id="@+id/PasswordTextView"
+                    android:textSize="15sp"
+                    android:textColor="#ff000000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50sp"
+                    android:textSize="15sp"
+                    android:id="@+id/PasswordEditText" />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingTop="10sp"
+                android:layout_marginLeft="10sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:layout_marginLeft="20sp"
+                    android:id="@+id/NameTextView"
+                    android:textSize="15sp"
+                    android:textColor="#ff000000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50sp"
+                    android:textSize="15sp"
+                    android:id="@+id/NameEditTextResult" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingTop="10sp"
+                android:layout_marginLeft="10sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Age"
+                    android:layout_marginLeft="20sp"
+                    android:id="@+id/AgeTextView"
+                    android:textSize="15sp"
+                    android:textColor="#ff000000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50sp"
+                    android:textSize="15sp"
+                    android:id="@+id/AgeEditTextResult" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingTop="10sp"
+                android:layout_marginLeft="10sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sex"
+                    android:layout_marginLeft="20sp"
+                    android:id="@+id/SexTextView"
+                    android:textSize="15sp"
+                    android:textColor="#ff000000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50sp"
+                    android:textSize="15sp"
+                    android:id="@+id/SexEditTextResult" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingTop="10sp"
+                android:layout_marginLeft="10sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:layout_marginLeft="20sp"
+                    android:id="@+id/EmailTextView"
+                    android:textSize="15sp"
+                    android:textColor="#ff000000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50sp"
+                    android:textSize="15sp"
+                    android:id="@+id/EmailEditTextResult" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingTop="10sp"
+                android:layout_marginLeft="10sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone"
+                    android:layout_marginLeft="20sp"
+                    android:id="@+id/PhoneTextView"
+                    android:textSize="15sp"
+                    android:textColor="#ff000000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50sp"
+                    android:textSize="15sp"
+                    android:id="@+id/PhoneEditTextResult" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingTop="10sp"
+                android:layout_marginLeft="10sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address"
+                    android:layout_marginLeft="20sp"
+                    android:id="@+id/AddressTextView"
+                    android:textSize="15sp"
+                    android:textColor="#ff000000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50sp"
+                    android:textSize="15sp"
+                    android:id="@+id/AddressEditTextResult" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingTop="10sp"
+                android:layout_marginLeft="10sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Country"
+                    android:layout_marginLeft="20sp"
+                    android:id="@+id/CountryTextView"
+                    android:textSize="15sp"
+                    android:textColor="#ff000000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50sp"
+                    android:textSize="15sp"
+                    android:id="@+id/CountryEditTextResult" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                android:layout_marginLeft="100sp"
+                android:id="@+id/EditButton"
+                android:layout_column="2" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirm"
+                android:layout_marginLeft="40sp"
+                android:id="@+id/ConfirmButton"
+                android:layout_column="3" />
+        </LinearLayout>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="History"
+            android:layout_marginLeft="195sp"
+            android:id="@+id/HistoryButton"
+            android:layout_column="2" />
+    </LinearLayout>
+
+
+</RelativeLayout>

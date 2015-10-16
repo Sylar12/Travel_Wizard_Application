@@ -1,0 +1,77 @@
+Quick Start:
+1) Start mysql server on local machine which runs the server
+2) Open the server project (TravelServer), in TableCreator.java inside the dao package change the Database Settings (userid & password) to yours, and then run it, it will automatically create the database, tables, and populate it with data.
+3) In Controller.java inside the server package, change the Database Settings (userid & password) to yours, and then run it, it will output your current ip and port and start listening for requests, we will then use the information on the Client side.
+4) Open the client APP project (TouristApp_Client), in the remote package of the java source files, find the CreateSocket.java, and then find this line:
+this.host = InetAddress.getByName("10.0.23.124");
+Change the ip address in this line to the server’s ip as output by the server above.
+Then open the Client.java in the same package, find this line:
+clientInstance = new Client(44400);
+Change the port to the server’s opening port as output by the server above.
+5) Run the Android project, it will connect to the server and start your journey!
+
+
+Project Overview:
+
+There are two folders, the Travel Server is the Server project which should be run in Eclipse, the User_Interface_Tourist-1 is the Client project which should be run in Android Studio.
+
+Server package:
+The dao package is for the database accesses
+The model package contains all the entities
+The server package is the server classes for the socket communication
+The util package is for the helper classes
+
+Client (Android App) package:
+
+The ExceptionHelper package is for the exception handling classes
+The adapters package is for the listView adapters
+The local package is for the local database services
+The remote package is for the communication with server
+The model package is the encapsulated classes
+The util package is for the helper classes
+
+The class diagram of the models are shown in Server_class_diagram.png
+
+To run the project, first run the TableCreator.java in the dao folder, it will automatically fill in the database with pre-defined data.
+Then run the Listener.java in the server package, it will print out the current ip of the local machine.
+Then switch to the client Android App program:
+Modify the ip address in the CreateSocket.java in the remote package with the printed server ip address.
+Then run the client android program, it will connect to the server and start the journey!
+
+Database schema:
+
+CREATE TABLE IF NOT EXISTS `city` (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  cityName varchar(15),
+  score double,
+  location varchar(50),
+  introduction varchar(500)
+);
+
+CREATE TABLE IF NOT EXISTS `scene` (
+  id INTEGER PRIMARY KEY AUTO_INCREMENT,
+  sceneName varchar(20),
+  score double,
+  cityID int,
+  introduction varchar(500),
+  FOREIGN KEY(cityID) REFERENCES city(id) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS `schedule_scene` (
+  scheduleID int,
+  sceneID int,
+  date int,
+  time int,
+  PRIMARY KEY(scheduleID, sceneID),
+  FOREIGN KEY(scheduleID) REFERENCES schedule(id) ON UPDATE CASCADE ON DELETE CASCADE,
+  FOREIGN KEY(sceneID) REFERENCES scene(id) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS `schedule` (
+  id INTEGER PRIMARY KEY AUTO_INCREMENT,
+  cityName text,
+  userID varchar(20),
+  FOREIGN KEY(userID) REFERENCES user(id) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+create table IF NOT EXISTS user (id varchar(20) primary key, password varchar(20), name varchar(20), age int, sex int, email varchar(30), phone varchar(15), address varchar(50), country varchar(15));
